@@ -513,9 +513,9 @@ mod tests {
     swapper.execute_command();
 
     let expectation = vec![
-      "bash",
+      "zsh",
       // The actual shell command:
-      "-c",
+      "-ic",
       "THUMB=\"$1\"; eval \"$2\"",
       // $0: The non-existent program name.
       "--",
